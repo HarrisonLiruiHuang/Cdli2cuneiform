@@ -25,8 +25,6 @@ This makes downstream work (databases, visualization, quantitative analysis) mor
 
 ## What the Codebook Contains
 
-The final codebook table (e.g., `sign_codebook.csv`) includes:
-
 - **Core identifiers**  
   - Stable internal ID / `qid`  
   - Per-list IDs (e.g., OSL number, other list numbers)  
@@ -61,18 +59,28 @@ The notebook `Crosslist_comparison.ipynb` is structured as:
 
 Running through these sections produces the final codebook and diagnostic tables.
 
+## Key Output Files
+
+- `Osl_df.csv` – cleaned OSL sign list used as a reference table  
+- `cross_list_sign_comparison.csv` – main crosslist comparison of signs across all lists  
+- `cross_list_value_comparison.csv` – comparison of specific values/attributes for matched signs  
+- `cross_list_comparison.csv` – summary of overlaps and gaps between sign lists  
+- `ambiguous_values_df.csv` – rows with ambiguous or conflicting mappings that need review  
+- `proposed_signlist.csv` – final proposed unified signlist/codebook with stable IDs and mappings  
+- “Signlist Statistics” stacked bar chart showing, for each sign list, the number of matches with OSL and the number of non-empty matches  
+
 ## Information
 
-**Dataset Sources:** 
-OSL (ogsl): https://raw.githubusercontent.com/oracc/osl/master/00lib/osl.asl
+**Dataset Sources:**  
+OSL (ogsl): https://raw.githubusercontent.com/oracc/osl/master/00lib/osl.asl  
 
-Nuolenna: https://github.com/tosaja/Nuolenna/blob/master/sign_list.txt
+Nuolenna: https://github.com/tosaja/Nuolenna/blob/master/sign_list.txt  
 
-Akkademia: https://github.com/gaigutherz/Akkademia/blob/master/cuneiform_to_unicode_fixed.csv
+Akkademia: https://github.com/gaigutherz/Akkademia/blob/master/cuneiform_to_unicode_fixed.csv  
 
-TextFabric: https://github.com/Nino-cunei/oldbabylonian/blob/master/sources/writing/GeneratedSignList.json
+TextFabric: https://github.com/Nino-cunei/oldbabylonian/blob/master/sources/writing/GeneratedSignList.json  
 
-CuneiML: https://github.com/taineleau/CuneiML/blob/main/cuneiform_unicode/cuneiform_vocab.txt
+CuneiML: https://github.com/taineleau/CuneiML/blob/main/cuneiform_unicode/cuneiform_vocab.txt  
 
-**Acknowledgments:** 
+**Acknowledgments:**  
 Special thanks to Dr. Adam Anderson at FactGrid for their guidance and support throughout this project!
