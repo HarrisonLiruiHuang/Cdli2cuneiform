@@ -61,11 +61,8 @@ Running through these sections produces the final codebook and diagnostic tables
 
 ## Key Output Files
 
-- `Osl_df.csv` – cleaned OSL sign list used as a reference table  
 - `cross_list_sign_comparison.csv` – main crosslist comparison of signs across all lists  
 - `cross_list_value_comparison.csv` – comparison of specific values/attributes for matched signs  
-- `cross_list_comparison.csv` – summary of overlaps and gaps between sign lists  
-- `ambiguous_values_df.csv` – rows with ambiguous or conflicting mappings that need review  
 - `proposed_signlist.csv` – final proposed unified signlist/codebook with stable IDs and mappings  
 - “Signlist Statistics” stacked bar chart showing, for each sign list, the number of matches with OSL and the number of non-empty matches  
 
